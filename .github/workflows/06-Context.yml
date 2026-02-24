@@ -4,6 +4,10 @@ run-name: My custom workfklow run name - ${{ runner.os}}
 on:
   push:
   workflow_dispatch:
+    inputs:
+      debug:
+        type: boolean
+        default: false
 
 
 
